@@ -9,6 +9,10 @@ import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Technologies from "./components/Technologies";
 
+{
+  /*Speed Insights*/
+}
+import { SpeedInsights } from "@vercel/speed-insights/react";
 const App = () => {
   return (
     <div className="overflow-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
@@ -40,6 +44,9 @@ const App = () => {
         {/* Contact */}
         <Contact />
       </div>
+
+      {/* Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 };
