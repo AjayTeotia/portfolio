@@ -1,6 +1,7 @@
 {
   /*Import Components*/
 }
+import { Analytics } from "@vercel/analytics/react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Experiences from "./components/Experiences";
@@ -47,6 +48,9 @@ const App = () => {
 
       {/* Speed Insights */}
       <SpeedInsights />
+
+      {/* Analytics */}
+      <Analytics />
     </div>
   );
 };
