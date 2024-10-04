@@ -37,13 +37,13 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Threads Clone",
+    title: "TaskNext",
     image: project2,
-    description: "A clone of the popular social media platform, Threads.",
+    description: "A web application that allows users to manage their tasks.",
     technologies: [
       "React.js",
       "Tailwind CSS",
-      "Chakra UI",
+      "Shadcn UI",  
       "Node.js",
       "MongoDB",
     ],
