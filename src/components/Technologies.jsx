@@ -1,20 +1,16 @@
-{
-  /*Import Icons*/
-}
-import { RiReactjsLine, RiNodejsLine } from "react-icons/ri";
+import { motion } from "framer-motion";
+import { BiLogoTypescript } from "react-icons/bi";
+import { FaBootstrap, FaJs } from "react-icons/fa";
+import { RiNextjsLine, RiNodejsLine, RiReactjsLine } from "react-icons/ri";
 import {
-  SiMongodb,
-  SiExpress,
-  SiTailwindcss,
-  SiHtml5,
   SiCss3,
+  SiExpo,
+  SiExpress,
+  SiHtml5,
+  SiMongodb,
+  SiPrisma,
+  SiTailwindcss,
 } from "react-icons/si";
-import { FaJs } from "react-icons/fa";
-
-{
-  /* Import Framer Motion */
-}
-import { animate, motion } from "framer-motion";
 
 const iconsVariants = (duration) => ({
   initial: { y: -10 },
@@ -33,11 +29,14 @@ const Technologies = () => {
   return (
     <div className="border-b border-neutral-800 pb-24">
       {/* Title */}
-      <motion.h2 
-      whileInView={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: -100 }}
-      transition={{ duration: 1.5 }}
-      className="my-20 text-center text-4xl">Technologies</motion.h2>
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1.5 }}
+        className="my-20 text-center text-4xl"
+      >
+        Technologies
+      </motion.h2>
 
       {/* Technologies Icons */}
       <motion.div
@@ -46,6 +45,16 @@ const Technologies = () => {
         transition={{ duration: 1.5 }}
         className="flex flex-wrap items-center justify-center gap-4"
       >
+        {/* NextJs Icon */}
+        <motion.div
+          variants={iconsVariants(1)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4 "
+        >
+          <RiNextjsLine className="text-7xl text-black-500" />
+        </motion.div>
+
         {/*React Icon*/}
         <motion.div
           variants={iconsVariants(2.5)}
@@ -56,6 +65,36 @@ const Technologies = () => {
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
 
+        {/* Expo Icon */}
+        <motion.div
+          variants={iconsVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4 "
+        >
+          <SiExpo className="text-7xl text-black-400" />
+        </motion.div>
+
+        {/* TypeScript Icon */}
+        <motion.div
+          variants={iconsVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4 "
+        >
+          <BiLogoTypescript className="text-7xl text-blue-500" />
+        </motion.div>
+
+        {/*JS Icon*/}
+        <motion.div
+          variants={iconsVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4 "
+        >
+          <FaJs className="text-7xl text-yellow-500" />
+        </motion.div>
+
         {/*Node Icon*/}
         <motion.div
           variants={iconsVariants(3)}
@@ -64,6 +103,16 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4 "
         >
           <RiNodejsLine className="text-7xl text-green-500" />
+        </motion.div>
+
+        {/* Prisma Icons */}
+        <motion.div
+          variants={iconsVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4 "
+        >
+          <SiPrisma className="text-7xl text-black-400" />
         </motion.div>
 
         {/*MongoDB Icon*/}
@@ -96,6 +145,16 @@ const Technologies = () => {
           <SiTailwindcss className="text-7xl text-cyan-500" />
         </motion.div>
 
+        {/* Bootstrap Icon */}
+        <motion.div
+          variants={iconsVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4 "
+        >
+          <FaBootstrap className="text-7xl text-purple-500" />
+        </motion.div>
+
         {/*HTML Icon*/}
         <motion.div
           variants={iconsVariants(5)}
@@ -114,16 +173,6 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4 "
         >
           <SiCss3 className="text-7xl text-blue-500" />
-        </motion.div>
-
-        {/*JS Icon*/}
-        <motion.div
-          variants={iconsVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4 "
-        >
-          <FaJs className="text-7xl text-yellow-500" />
         </motion.div>
       </motion.div>
     </div>

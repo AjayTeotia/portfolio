@@ -1,12 +1,5 @@
-{
-  /* Import Constants */
-}
+import { motion } from "framer-motion";
 import { PROJECTS } from "../constants";
-
-{
-  /* Import Framer Motion */
-}
-import { animate, motion } from "framer-motion";
 
 const Project = () => {
   return (
@@ -62,6 +55,30 @@ const Project = () => {
                   {technology}
                 </span>
               ))}
+
+              {/* Links */}
+              <div className="mt-4 flex flex-wrap gap-4">
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded-md bg-purple-700 px-4 py-2 text-white text-sm font-semibold transition hover:bg-purple-800"
+                  >
+                    🔗 Live Demo
+                  </a>
+                )}
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block rounded-md bg-neutral-800 px-4 py-2 text-white text-sm font-semibold transition hover:bg-neutral-700"
+                  >
+                    💻 View Code
+                  </a>
+                )}
+              </div>
             </motion.div>
           </div>
         ))}

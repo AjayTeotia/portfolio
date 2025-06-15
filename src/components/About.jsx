@@ -30,7 +30,7 @@ const About = () => {
           className="w-full lg:w-1/2 lg:p-8"
         >
           <div className="flex items-center justify-center p-5">
-            <img src={aboutImg} alt="about image" className="rounded-2xl" />
+            <img src={aboutImg} alt="about image" className="rounded-2xl h-64 w-64" />
           </div>
         </motion.div>
 

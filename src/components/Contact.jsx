@@ -1,12 +1,5 @@
-{
-  /* Import Constants */
-}
+import { motion } from "framer-motion";
 import { CONTACT } from "../constants";
-
-{
-  /* Import Framer Motion */
-}
-import { animate, motion } from "framer-motion";
 
 const Contact = () => {
   return (
